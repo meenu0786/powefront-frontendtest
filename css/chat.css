@@ -1,0 +1,137 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	background: url("../images/bg-image.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div, span, textarea {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+* {box-sizing: border-box;}
+
+.main {
+	position: absolute;
+	right: 10;
+	bottom: 0;
+}
+
+#chatHolder {
+	height: 650px;
+	width: 500px;
+	border: 1px solid #cccccc;
+	border-top: none;
+	border-bottom: none;
+	overflow: auto;
+	background-color: #ffffff;
+}
+
+#chatHolder h3 {
+	text-align: center;
+	padding: 10px;
+	margin-top: 0;
+	margin-bottom: 8px;
+	background-color: #a782ec;
+}
+
+#chatHistory {
+	border-bottom: 2px solid #cccccc;
+	height: 280px;
+	overflow: auto;
+}
+
+#liveChat {
+	height: 280px;
+	overflow: auto;
+	padding-top: 8px;
+}
+
+#chatInput {
+	width: 428px;
+	height: 35px;
+	border: 2px dashed lightgray;
+	resize: none;
+	padding: 5px;
+}
+
+#chatInput:focus {
+	outline: none;
+}
+
+.chatBox {
+	width: 75%;
+	border: 1px solid gray;
+	padding: 8px;
+	background: whitesmoke;
+	border-radius: 4px;
+	margin-bottom: 5px;
+	font-size: 14px;
+	display: none;
+}
+
+.chatBox .from {
+	font-weight: bold;
+	text-transform: capitalize;
+	margin-right: 5px;
+}
+
+.chatBox .time {
+	color: #5f6368;
+}
+
+.chatBox .message {
+	margin-top: 10px;	
+}
+
+.chatBox.visitorChatBox {
+	margin: 0 5px 5px auto;
+	background-color: #E0CDEE;
+}
+
+#chatSubmit {
+	vertical-align: top;
+	background-color: #623B7A;
+  color: white;
+	border: none;
+  height: 35px;
+  width: 70px;
+	opacity: 0.8;
+	border-radius: 4px;
+}
+
+#chatSubmit:hover {
+	opacity: 1;
+	cursor: pointer
+}
+
+.messageBox {
+	position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+
+.spinner {
+	display: block;
+	margin-left: auto;
+}
+
+/* styling for scrollbar start */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* styling for scrollbar end */

@@ -1,0 +1,36 @@
+<html>
+
+<head>
+	<title>JS Chat</title>
+
+	<script src="js/chat.js"></script>
+	<script src="js/chatHistory.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/chat.css">
+
+</head>
+
+<body>
+	<h1>JS Chat</h1>
+	<div class="main">
+		<div id="chatHolder">
+			<h3>Live Chat</h3>
+			<div id="chatHistory">
+			</div>
+			<div id="liveChat">
+			</div>
+			
+		</div>
+		<div class="messageBox">
+			<textarea id="chatInput" placeholder='Type your question here...'></textarea>
+			<input id='chatSubmit' type="button" value='SEND' ></input>
+		</div>
+	</div>
+	<div class="chatBox" id="chatBox">
+		<span class="from" id="from"></span>
+		<span class="time" id="time"></span>
+		<div class="message" id="message"></div>
+	</div>
+</body>
+
+</html>
